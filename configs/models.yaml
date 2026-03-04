@@ -1,0 +1,39 @@
+models:
+  - name: tinyllama-1.1b
+    hf_path: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    device: cuda
+    load_in_4bit: false   # small enough to run full precision
+
+  - name: phi-3-mini
+    hf_path: microsoft/Phi-3-mini-4k-instruct
+    device: cuda
+    load_in_4bit: false
+
+  - name: gemma-2b
+    hf_path: google/gemma-2b-it
+    device: cuda
+    load_in_4bit: false
+
+  - name: mistral-7b
+    hf_path: mistralai/Mistral-7B-Instruct-v0.2
+    device: cuda
+    load_in_4bit: true    # needs 4-bit on 8GB VRAM
+
+  - name: qwen2-1.5b
+    hf_path: Qwen/Qwen2-1.5B-Instruct
+    device: cuda
+    load_in_4bit: false
+
+  - name: stablelm-1.6b
+    hf_path: stabilityai/stablelm-2-1_6b-chat
+    device: cuda
+    load_in_4bit: false
+
+  - name: opt-2.7b
+    hf_path: facebook/opt-2.7b
+    device: cuda
+    load_in_4bit: false
+  
+  - name: gpt2
+    hf_path: gpt2
+    load_in_4bit: false

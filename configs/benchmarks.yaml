@@ -1,0 +1,13 @@
+tasks:
+  - name: mmlu
+    num_fewshot: 5
+    limit: 500          # subset for faster runs during dev
+  - name: gsm8k
+    num_fewshot: 8
+    limit: 200
+  - name: humaneval
+    num_fewshot: 0
+    limit: 164          # full dataset is only 164 problems
+  - name: arc_challenge
+    num_fewshot: 25
+    limit: 300
